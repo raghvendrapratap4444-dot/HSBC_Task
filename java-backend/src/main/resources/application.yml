@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: market-analysis
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=200,expireAfterWrite=5m
+
+ml:
+  api:
+    url: ${ML_API_URL:http://localhost:8000}
+
+housing:
+  data:
+    path: ${HOUSING_DATA_PATH:classpath:housing.csv}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

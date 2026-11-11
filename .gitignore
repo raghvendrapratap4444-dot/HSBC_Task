@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+ml-api/artifacts/
+
+# Java
+java-backend/target/
+*.class
+*.jar
+!**/src/**/*.jar
+
+# Node / Next.js
+portal/node_modules/
+portal/.next/
+portal/out/
+portal/.env*.local
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
